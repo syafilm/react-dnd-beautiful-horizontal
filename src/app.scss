@@ -1,0 +1,202 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+html, body{
+  color: #000;
+  background: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.rs-form:not(.rs-form-inline) 
+.rs-form-group:not(:last-child){
+  margin-bottom: 20px;
+}
+
+.text-read{
+  color:rgba(0, 0, 0, 0.3) !important;
+}
+
+.text-red{
+  color: #fb293b;
+}
+
+.text-danger{
+  color: #f44336;
+}
+
+.login-form{
+  input{
+    background: #f2f4f7;
+    background-color: #f2f4f7;
+    border: 1px solid #E7ECF4;
+  }
+}
+
+.start-form{
+  input{
+    background: #f2f4f7;
+    background-color: #f2f4f7;
+    border: 1px solid #E7ECF4;
+  }
+  textarea{
+    background: #f2f4f7;
+    background-color: #f2f4f7;
+    border: 1px solid #E7ECF4;
+  }
+}
+
+.flatpickr-months .flatpickr-month{
+  background: #000;
+}
+.flatpickr-current-month .flatpickr-monthDropdown-months{
+  background: #000;
+}
+span.flatpickr-weekday{
+  background: #000;
+  color: #fff;
+}
+.flatpickr-weekdays{
+  background: #000;
+}
+.flatpickr-months .flatpickr-prev-month:hover svg, 
+.flatpickr-months .flatpickr-next-month:hover svg{
+  fill: #fff;
+}
+.flatpickr-calendar.arrowBottom:after{
+  border-top-color: #fff;
+}
+.flatpickr-input:focus {
+  
+}
+.flatpickr-input:focus-visible {
+  outline: 0;
+}
+
+.flatpickr-day.selected, 
+.flatpickr-day.startRange, 
+.flatpickr-day.endRange, 
+.flatpickr-day.selected.inRange, 
+.flatpickr-day.startRange.inRange, 
+.flatpickr-day.endRange.inRange, 
+.flatpickr-day.selected:focus, 
+.flatpickr-day.startRange:focus, 
+.flatpickr-day.endRange:focus, 
+.flatpickr-day.selected:hover, 
+.flatpickr-day.startRange:hover, 
+.flatpickr-day.endRange:hover, 
+.flatpickr-day.selected.prevMonthDay, 
+.flatpickr-day.startRange.prevMonthDay, 
+.flatpickr-day.endRange.prevMonthDay, 
+.flatpickr-day.selected.nextMonthDay, 
+.flatpickr-day.startRange.nextMonthDay, 
+.flatpickr-day.endRange.nextMonthDay{
+  background: #000;
+  border-color: #000;
+}
+
+a{
+  color: #000;
+  &:hover{
+    color: #000;
+  }
+}
+
+.flatpickr-calendar.arrowTop:before{
+  border-bottom-color: #fff;
+}
+.flatpickr-calendar.arrowTop:after{
+  border-bottom-color: #fff;
+}
+
+.css-2nc3zx .flatpickr-input{
+  background: #fff !important;
+}
+
+.switch{
+  .checkbox{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  #toggle {
+    .layer{
+      border-radius: 10px;
+      width: 100%;
+      border: 0px solid #d7e1e7;
+      background-color: #EDEFF2;
+      transition: 0.3s ease all;
+      z-index: 1;
+      position: absolute;
+      display: inline-flex;
+      align-items: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      > i{
+        position: relative;
+        font-size: 18px;
+      }
+      > .la-sun{
+        left: 6px;
+        opacity: 0.3;
+      }
+      > .la-moon{
+        margin-left: auto;
+        opacity: 0.3;
+        right: 6px;
+      }
+    }
+    border-radius: 10px;
+    position: relative;
+    top: 50%;
+    width: 60px;
+    height: 30px;
+    .knobs{
+      position: absolute;
+      box-shadow:0 5px 10px rgb(0 0 0 / 10%);
+      top: 4px;
+      left: 4px;
+      width: 25px;
+      height: 22px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1;
+      background-color: #fff;
+      border-radius: 8px;
+      transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+      z-index: 2;
+      > .la-moon{
+        display: none;
+      }
+      > .la-sun{
+        display: block;
+      }
+    }
+    .checkbox:checked + .knobs{
+      left: 30px;
+      // background-color: rgb(251, 41, 59);
+      > .la-sun{
+        display: none;
+      }
+      > .la-moon{
+        display: block;
+      }
+    }
+    .checkbox:checked ~ .layer{
+      // background-color: rgba(251, 41, 59, 0.1);
+    }
+    .knobs, .knobs:before, .layer{
+      transition: 0.3s ease all;
+    }
+  }
+}
