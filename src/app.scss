@@ -3,6 +3,7 @@
 html, body{
   color: #000;
   background: #fff;
+  height: 100%;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
 
@@ -199,4 +200,8 @@ a{
       transition: 0.3s ease all;
     }
   }
+}
+
+#root{
+  height: 100%;
 }

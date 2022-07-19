@@ -27,6 +27,7 @@
     "react": "^17.0.1",
     "react-app-rewired": "^2.1.11",
     "react-avatar-editor": "^12.0.0",
+    "react-beautiful-dnd": "^13.1.0",
     "react-confirm-alert": "^2.8.0",
     "react-cookie": "^4.1.1",
     "react-copy-to-clipboard": "^5.0.4",
@@ -40,6 +41,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-select": "^5.2.2",
+    "react-virtualized": "^9.22.3",
     "rsuite": "^4.8.4",
     "sass": "^1.49.7",
     "web-vitals": "^2.1.4"
